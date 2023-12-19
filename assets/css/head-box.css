@@ -1,0 +1,124 @@
+* {
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html, body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+:root {
+    --height-header: 65px;
+}
+#main {
+    width: 100%;
+    height: var(--height-header);
+}
+/* Header */
+#header {
+    width: 100%;
+    height: var(--height-header);
+    background-color: #659DBD;
+    display: flex;
+    position: fixed;
+    z-index: 2;
+    justify-content: space-between;
+}
+#header #box-logo {
+    width: 20%;
+    height: var(--height-header);
+    display: flex;
+    line-height: var(--height-header);
+}
+#header #box-logo img {
+    width: 60px;
+    height: 60px;
+    margin-left: 30px;
+    margin-right: 5px;   
+}
+#header #box-logo a {
+    color: black;
+    text-decoration: none;
+    font-size: 25px;
+}
+#header #box-logo {
+    width: 20%;
+    height: var(--height-header);
+    line-height: var(--height-header);
+    display: flex;
+}
+#header #box-menu {
+    width: 31%;
+    height: var(--height-header);
+    display: flex;
+    line-height: var(--height-header);
+}
+#header #box-menu a {
+    text-decoration: none;
+    color: rgb(45, 44, 44);
+    font-size: 18px;
+    display: inline-block;
+    padding: 0 18px;
+    text-transform: uppercase;
+}
+#header #box-menu a:hover {
+    background-color: orangered;
+    color: #fff;
+    padding: 0 15px;
+    font-weight: bold;
+    box-shadow: 2px 2px 2px 2px gray;
+}
+#header #box-search {
+    width: 25%;
+    height: var(--height-header);
+    line-height: var(--height-header);
+    justify-content: center;
+    display: flex;
+}
+#header #box-search #searching {
+    height: 35px;
+    width: 200px;
+    border-radius: 30px;
+    padding: 0 10px;
+    font-size: 16px;
+    transition: width 0.4s ease-in-out;
+    position: relative;
+}
+#header #box-search #searching:focus {
+    width: 350px;
+}
+#header #box-search img {
+    margin-top: 15px;
+    margin-left: 5px;
+    height: 35px;
+    width: 40px;
+}
+#header #form-log {
+    width: 20%;
+    height: var(--height-header);
+    display: flex;
+    justify-content: space-around;
+    line-height: var(--height-header);
+}
+#header #form-log a {
+    text-decoration: none;
+    color: rgb(57, 56, 56);
+    font-size: 20px;
+    border: 3px solid black;
+    padding: 5px 20px;
+    border-radius: 20px;
+}
+#header #form-log #form-login {
+    color: #fff;
+    background-color: orangered;
+    border: 3px solid orange;
+}
+#header #form-log #form-login:hover {
+    background-color: rgb(70, 70, 70);
+    color: #fff;
+    border: 3px solid #333;
+}
+#header #form-log a:hover {
+    background-color: rgb(70, 70, 70);
+    color: #fff;
+    border: 3px solid #333;
+}
